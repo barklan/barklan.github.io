@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Detectron2 - convinient detection tool"
+title: "Detectron2 - convinient detection framework"
 subtitle: "Training Detectron2 on custom dataset"
 author: "Gleb"
 header-style: text
