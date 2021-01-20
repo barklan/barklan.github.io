@@ -78,7 +78,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Bored student"
+sidebar-about-description: "Undergraduate student at MIPT"
 sidebar-avatar: /img/avatar-barklan-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -133,4 +133,3 @@ friends: [
 ]
 
 # theme: jekyll-theme-cayman
-theme: jekyll-theme-cayman
