@@ -1,7 +1,7 @@
 {
-  "name": "Hux Blog",
-  "short_name": "Hux Blog",
-  "description": "About an engineer & designer who loves web.",
+  "name": "Gleb's Blog",
+  "short_name": "Gleb's Blog",
+  "description": "About deep learning and computer vision.",
   "icons": [{
     "src": "icons/128.png",
     "sizes": "128x128",
