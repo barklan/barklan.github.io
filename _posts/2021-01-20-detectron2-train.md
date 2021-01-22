@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Detectron2 - convinient detection framework"
+title: "Detectron2 - convenient detection framework"
 subtitle: "Training Detectron2 on custom dataset"
 author: "Gleb"
 header-style: text
@@ -15,9 +15,10 @@ tags:
   - CVat
 ---
 
-This is a template for the final project report in DL School
+### Motivation
+
+So after ...
 
 ### Background
 
-There're always trade offs in any software design, and deep learning frameworks are no exception...
 
