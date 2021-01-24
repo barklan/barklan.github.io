@@ -1,11 +1,11 @@
 # Site settings
-title: Gleb's Blog
-SEOTitle: Gleb's Blog | Computer Vision
+title: Neural Pony
+SEOTitle: Neural Pony | Computer Vision
 header-img: img/kangaroo_back.jpg
 email: buzin.gb@phystech.edu
 description: "About computer vision, deep learning and general AI endeavors"
-keyword: "Buzin, Gleb, Deep Learning, pytorch, computer vision, detection"
-url: "https://barklan.github.io"              # your host, for absolute URL
+keyword: "Neural, Pony, Deep Learning, pytorch, computer vision, detection"
+url: "https://blog.neuralpony.com/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.

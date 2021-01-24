@@ -1,6 +1,6 @@
 {
-  "name": "Gleb's Blog",
-  "short_name": "Gleb's Blog",
+  "name": "Neural Pony",
+  "short_name": "Neural Pony",
   "description": "About deep learning and computer vision.",
   "icons": [{
     "src": "icons/128.png",
