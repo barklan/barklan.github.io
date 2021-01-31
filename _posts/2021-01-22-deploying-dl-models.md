@@ -241,5 +241,4 @@ if __name__ == "__main__":
 
 ### Telegram bot
 
-You can find it at
 To demostrate that I can include any arbitrary module in this schema. 

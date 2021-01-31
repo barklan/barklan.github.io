@@ -430,3 +430,4 @@ accuracy
     1.0
 
 
+If you want to play with it - please see [**Kaggle Notebook**](https://www.kaggle.com/glebbuzin/solving-sklearn-datasets-with-pytorch). Thanks!
