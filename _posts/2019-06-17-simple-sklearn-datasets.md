@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Solving toy sklearn datasets with PyTorch"
+title: "Solving sklearn datasets with PyTorch"
 subtitle: "Using PyTorch to separate linearly inseparable toy sklearn datasets"
 author: "Gleb"
 header-style: text
@@ -38,7 +38,7 @@ sns.set(style="darkgrid", font_scale=1.4)
 %config InlineBackend.figure_format = 'retina'
 ```
 
-## Logistic Regression
+### Logistic Regression
 
 Let's take a look at what happens in logistic regression. At the input we have a matrix object-attribute X and a column-vector $y$ - labels from $\{0, 1\}$ for each object. We want to find a matrix of weights $W$ and a bias $b$ that our model $XW + b$ will somehow predict the class of the object. As you can see in the output, our model can produce a number in the range from $(-\infty;\infty)$. This output is commonly referred to as "logits". We need to translate it to the interval from $[0; 1]$ in order for it to give us the probability of the object belonging to the first class, it is also better for this function to be monotonic, quickly calculated, have a derivative and on $-\infty$ have the value $0$, on $+\infty$ - $1$. This class of functions is called sigmoid. Most often we take as a sigmoid
 $$
