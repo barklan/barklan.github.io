@@ -14,19 +14,19 @@ tags:
 
 - [ZLib](loginlibhuwhnmis.onion/) - largest ebook library out there. They have a TG bot @zlibrarybot
 
-## Linear Algebra
+### Linear Algebra
 
 - [The Matrix Calculus You Need For Deep Learning](https://explained.ai/matrix-calculus/)
 
-## Statistics
+### Statistics
 - [Seeing Theory](https://seeing-theory.brown.edu/) - a visual introduction to probability and statistics
 - Mathematical Statistics with Applications by Dennis D. Wackerly, William Mendenhall III, Richard L. Scheaffer
 
-## Machine Learning
+### Machine Learning
 
 - [mlcourse.ai](https://mlcourse.ai/roadmap) - best open course on **classic machine learning** [GitHub](https://github.com/Yorko/mlcourse.ai)
 
-## Deep Learning & PyTorch
+### Deep Learning & PyTorch
 
 - [Deep Learning book](https://www.deeplearningbook.org/) by Ian Goodfellow, Yoshua Bengio, Aaron Courville
 - [https://cs231n.github.io/] - Convolutional Neural Networks for Visual Recognition. Stanford course by [Andrej Karpathy](https://karpathy.ai/). **Best course to understand nerual networks.**
