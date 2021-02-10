@@ -28,7 +28,7 @@ Deep Learning model does nothing for you if you don't know how to serve it.
 
 The beauty of this is that **everything here is a Docker container** (except the client, but it can be :/ ) and can be deployed on separate server.
 
-![schema](/img/in-post/post-deploying-dl-models/dl_deployment.svg)
+![schema](/img/post-deploying-dl-models/dl_deployment.svg)
 
 PyTorch models free us from moderating user photos and with the structure provided it balances the load and keeps requests short-lived. Thus it our deployment model is **self-automated and scalable**.
 

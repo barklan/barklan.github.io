@@ -5,7 +5,7 @@ subtitle: "Training Detectron2 on custom dataset"
 author: "Gleb"
 # header-style: text
 lang: en
-header-img: "img/in-post/post-detectron2-train/kangaroo.jpg"
+header-img: "img/post-detectron2-train/kangaroo.jpg"
 header-mask: 0.7
 mathjax: true
 tags:
@@ -20,7 +20,7 @@ tags:
 
 ### Object Detection
 
-<!-- ![kangaroo](/img/in-post/post-detectron2-train/kangaroo.jpg) -->
+<!-- ![kangaroo](/img/post-detectron2-train/kangaroo.jpg) -->
 
 The main goal of object detection is to build a model that can detect and localize specific objects in images. It is can be used for face detection, object detection on the road, vehicle type detection, count of pedestrian in any event etc. If you are new to object detection have a look at [awesome starter tutorial](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Object-Detection) on object detection with PyTorch.
 
@@ -46,11 +46,11 @@ for index, oldfile in enumerate(glob.glob('*.jpg'), start=1):
 
 Then, after splitting the dataset into tran/val/test we need to label the task number on each photo. To do that I will use Intel's **[CVAT](https://github.com/openvinotoolkit/cvat)** (Computer Vision Annotation Tool). It stands out from other labeling tool with it's heavy use of detection models to progressively aid the user with marking the objects.
 
-![cvatmain](/img/in-post/post-detectron2-train/cvat.jpg)
+![cvatmain](/img/post-detectron2-train/cvat.jpg)
 
 We will save the annotations in YOLO format as a json files which is most common among detection datasets.
 Lastly, for convenient use we will upload the dataset to Kaggle.
-[![kaggle_dataset](/img/in-post/post-detectron2-train/kaggle_dataset.png)](https://www.kaggle.com/glebbuzin/physics-tasks-written-solutions)
+[![kaggle_dataset](/img/post-detectron2-train/kaggle_dataset.png)](https://www.kaggle.com/glebbuzin/physics-tasks-written-solutions)
 
 
 ### Detectron2
@@ -117,7 +117,7 @@ for d in random.sample(dataset_dicts, 3):
     cv2_imshow(vis.get_image()[:, :, ::-1])
 ```
 
-![marked](/img/in-post/post-detectron2-train/marked_sol.jpg)
+![marked](/img/post-detectron2-train/marked_sol.jpg)
 
 
 ### Train!
@@ -187,7 +187,7 @@ for d in random.sample(dataset_dicts, 5):
     cv2_imshow(out.get_image()[:, :, ::-1])
 ```
 
-![infer](/img/in-post/post-detectron2-train/infer.jpg)
+![infer](/img/post-detectron2-train/infer.jpg)
 
 We can also evaluate its performance using AP metric implemented in COCO API.
 
@@ -205,10 +205,10 @@ inference_on_dataset(trainer.model, test_loader, evaluator)
 
 This gives an **AP of ~55**. It is not that good, but for such a difficult task it is expected.
 
-![ap](/img/in-post/post-detectron2-train/ap_metric.jpg)
+![ap](/img/post-detectron2-train/ap_metric.jpg)
 
 ### What's next?
 
 See **[Part 2](https://barklan.github.io/2021/01/22/deploying-dl-models/)** about deploying deep learning models in production-like environment.
 
-[![demo](/img/in-post/post-detectron2-train/demo.jpg)](https://mipt.one/detection/)
+[![demo](/img/post-detectron2-train/demo.jpg)](https://mipt.one/detection/)

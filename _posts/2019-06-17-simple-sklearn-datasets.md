@@ -5,7 +5,7 @@ subtitle: "Using PyTorch to separate linearly inseparable toy sklearn datasets"
 author: "Gleb"
 header-style: text
 lang: en
-# header-img: "img/in-post/post-detectron2-train/kangaroo.jpg"
+# header-img: "img/post-detectron2-train/kangaroo.jpg"
 # header-mask: 0.7
 mathjax: true
 tags:
@@ -41,9 +41,8 @@ sns.set(style="darkgrid", font_scale=1.4)
 ### Logistic Regression
 
 Let's take a look at what happens in logistic regression. At the input we have a matrix object-attribute X and a column-vector $y$ - labels from $\{0, 1\}$ for each object. We want to find a matrix of weights $W$ and a bias $b$ that our model $XW + b$ will somehow predict the class of the object. As you can see in the output, our model can produce a number in the range from $(-\infty;\infty)$. This output is commonly referred to as "logits". We need to translate it to the interval from $[0; 1]$ in order for it to give us the probability of the object belonging to the first class, it is also better for this function to be monotonic, quickly calculated, have a derivative and on $-\infty$ have the value $0$, on $+\infty$ - $1$. This class of functions is called sigmoid. Most often we take as a sigmoid
-$$
-\sigma(x) = \frac{1}{1 + e^{-x}}.
-$$
+
+$ \sigma(x) = \frac{1}{1 + e^{-x}}. $
 
 I will write a PyTorch module that implements $logits = XW + b$, where $W$ and $b$ are [parameters](https://pytorch.org/docs/stable/generated/torch.nn.parameter.Parameter.html) (`nn.Parameter`) of the model. In other words, here I implement the [module `nn.Linear`](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html) with our own hands. I will initialize weights with normal distribution (`torch.randn`).
 
@@ -85,7 +84,7 @@ plt.show()
 
 
     
-![png](/img/in-post/post-simple-sklearn-datasets/output_9_0.png)
+![png](/img/post-simple-sklearn-datasets/output_9_0.png)
     
 
 
@@ -203,7 +202,7 @@ show_loss(losses)
 
 
     
-![png](/img/in-post/post-simple-sklearn-datasets/output_27_0.png)
+![png](/img/post-simple-sklearn-datasets/output_27_0.png)
     
 
 
@@ -249,7 +248,7 @@ show_separation(model)
 
 
     
-![png](/img/in-post/post-simple-sklearn-datasets/output_30_0.png)
+![png](/img/post-simple-sklearn-datasets/output_30_0.png)
     
 
 
@@ -315,7 +314,7 @@ show_loss(losses)
 
 
     
-![png](/img/in-post/post-simple-sklearn-datasets/output_38_0.png)
+![png](/img/post-simple-sklearn-datasets/output_38_0.png)
     
 
 
@@ -326,7 +325,7 @@ show_separation(model)
 
 
     
-![png](/img/in-post/post-simple-sklearn-datasets/output_39_0.png)
+![png](/img/post-simple-sklearn-datasets/output_39_0.png)
     
 
 
@@ -349,7 +348,7 @@ accuracy
 
 We can **visualize the training process** by saving the state of the network at every epoch. Here you see inference using model trained on 1 to 10 epochs max:
 
-![visual](/img/in-post/post-simple-sklearn-datasets/visual.gif)
+![visual](/img/post-simple-sklearn-datasets/visual.gif)
 
 ### Make Circles Dataset
 
@@ -403,7 +402,7 @@ show_loss(losses)
 
 
     
-![png](/img/in-post/post-simple-sklearn-datasets/output_50_0.png)
+![png](/img/post-simple-sklearn-datasets/output_50_0.png)
     
 
 
@@ -414,7 +413,7 @@ show_separation(model)
 
 
     
-![png](/img/in-post/post-simple-sklearn-datasets/output_51_0.png)
+![png](/img/post-simple-sklearn-datasets/output_51_0.png)
     
 
 
