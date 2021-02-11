@@ -1,6 +1,6 @@
 # Site settings
 title: Gleb's Blog
-SEOTitle: Gleb's | Computer Vision
+SEOTitle: Gleb's Blog
 header-img: img/kangaroo_back.jpg
 email: buzin.gb@phystech.edu
 description: "About computer vision, deep learning and general AI endeavors"
@@ -17,8 +17,8 @@ RSS: false
 # zhihu_username:     huxpro
 github_username:    barklan
 # twitter_username:   huxpro
-#facebook_username:  huxpro
-# linkedin_username:  firstname-lastname-idxxxx
+# facebook_username:  huxpro
+linkedin_username:  gleb-buzin-8690591b7
 
 
 
